@@ -1,30 +1,48 @@
-import Link from "next/link";
 import React from "react";
+import Linking from "../link";
+import { socialLinks, impLinks, contactLinks } from "@/app/constants";
 
 function Footer() {
   return (
-    <section className="flex gap-4">
-      <div className="flex ">
-        <div>
-          <h4>Important Links</h4>
+    <section className="flex gap-4 flex-col border-t-2 border-gray-500 ">
+      <div className="w-full flex justify-between mt-8">
+        <div className="flex gap-4 flex-col">
+          <h4 className="text-2xl font-semibold ">Important Links</h4>
+          <ul className="flex gap-2 flex-col">
+            {impLinks.map((link) => {
+              return (
+                <li>
+                  <Linking path={link.path} data={link.label} />
+                </li>
+              );
+            })}
+          </ul>
         </div>
-        <div></div>
+        <div className="flex gap-4 flex-col">
+          <h4 className="text-2xl font-semibold ">Contact Us</h4>
+          <ul className="flex gap-2 flex-col">
+            {contactLinks.map((link) => {
+              return (
+                <li>
+                  <Linking path={link.path} data={link.label} />
+                </li>
+              );
+            })}
+          </ul>
+        </div>
         <img src="/images/branding/logo.svg" alt="logo" />
       </div>
-      <div className="flex flex-col">
-        <div className="flex gap-4 " >
-            <Link href="#">
-            <img src="/images/icons/insta.svg" alt="logo" />
-            </Link>
-            <Link href="#">
-            <img src="/images/icons/fb.svg" alt="logo" />
-            </Link>
-            <Link href="#">
-            <img src="/images/icons/twitter.svg" alt="logo" />
-            </Link>
-            <Link href="#">
-            <img src="/images/icons/yt.svg" alt="logo" />
-            </Link>
+      <div className="flex justify-between">
+        <div></div>
+        <div className="flex gap-4 ">
+          {socialLinks.map((item) => {
+            return (
+              <Linking
+                path={item.path}
+                data={<img src={item.icon} alt={item.label} />}
+              />
+            );
+          })}
         </div>
         <p>© Xohub Inc, all rights reserved.</p>
       </div>
