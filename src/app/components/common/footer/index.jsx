@@ -39,7 +39,7 @@ function Footer() {
             return (
               <Linking
                 path={item.path}
-                data={<img src={item.icon} alt={item.label} />}
+                data={<img className="" src={item.icon} alt={item.label} />}
               />
             );
           })}

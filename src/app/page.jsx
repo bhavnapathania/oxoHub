@@ -1,14 +1,14 @@
-export default function Home() {
-  return(
-  <section>
-  <div>
-    <div>
-      <img src="" alt="" />
-      <img src="" alt="" />
-    </div>
-    <p></p>
-  </div>
+import LeftRightImgForm from "./components/common/leftRightImgForm";
 
-  </section>
-)
+export default function Home() {
+  return (
+    <section className="w-full ">
+      <LeftRightImgForm
+        title="Select What You"
+        coloredText="Want"
+        description="oXohub is created masterpices for so book and place your order"
+        url="/images/others/work.png"
+      />
+    </section>
+  );
 }
