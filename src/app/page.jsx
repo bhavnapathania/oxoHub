@@ -1,8 +1,10 @@
+import FilterComponent from "./components/common/filters";
 import LeftRightImgForm from "./components/common/leftRightImgForm";
 
 export default function Home() {
   return (
     <section className="w-full ">
+      <FilterComponent/>
       <LeftRightImgForm
         title="Select What You"
         coloredText="Want"
