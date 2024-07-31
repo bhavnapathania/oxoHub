@@ -9,15 +9,15 @@ function LeftRightImgForm({
   url,
 }) {
   return (
-    <section
-      className="w-full flex justify-between items-center h-[80vh] relative "
-     
-    >
-      <div className="absolute w-full h-full top-0 left-0" style={{
-        backgroundImage: 'url("/images/others/bgVisuals.png")',
-        backgroundPosition: "left",
-        backgroundRepeat: "no-repeat",
-      }}></div>
+    <section className="w-full flex justify-between items-center h-[80vh] relative ">
+      <div
+        className="absolute w-full h-full top-0 left-0"
+        style={{
+          backgroundImage: 'url("/images/others/bgVisuals.png")',
+          backgroundPosition: "left",
+          backgroundRepeat: "no-repeat",
+        }}
+      ></div>
       <div className="flex flex-col gap-6 w-[55%] relative">
         <div className="flex flex-col gap-6 w-[80%]">
           <h2 className="text-4xl font-normal">
@@ -29,7 +29,11 @@ function LeftRightImgForm({
           </p>
         </div>
         <div>
-          <Form />
+          <Form
+            placeholderText={"Please write your message here..."}
+            btnLabel={"Book Your Order"}
+            icon={"/images/icons/arrow.svg"}
+          />
         </div>
       </div>
       <img className="" src={url} alt="" />
