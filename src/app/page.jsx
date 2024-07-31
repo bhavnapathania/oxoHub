@@ -1,3 +1,4 @@
+
 import LeftRightImgForm from "./components/common/leftRightImgForm";
 
 export default function Home() {
@@ -6,9 +7,11 @@ export default function Home() {
       <LeftRightImgForm
         title="Select What You"
         coloredText="Want"
-        description="oXohub is created masterpices for so book and place your order"
+        boldDescription="oXohub"
+        description=" is created masterpices for so book and place your order"
         url="/images/others/work.png"
       />
+ 
     </section>
   );
 }

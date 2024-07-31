@@ -14,7 +14,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className="w-screen flex justify-center overflow-x-hidden">
-        <div className="w-[95%]">
+        <div className="w-[90%]">
           <Header />
           <main className={`${inter.className} w-full`}>{children}</main>
           <Footer />
