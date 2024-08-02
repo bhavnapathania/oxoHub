@@ -9,9 +9,9 @@ function Footer() {
         <div className="flex gap-4 flex-col">
           <h4 className="text-2xl font-semibold ">Important Links</h4>
           <ul className="flex gap-2 flex-col">
-            {impLinks.map((link) => {
+            {impLinks.map((link, index) => {
               return (
-                <li>
+                <li key={index}>
                   <Linking path={link.path} data={link.label} />
                 </li>
               );
@@ -21,9 +21,9 @@ function Footer() {
         <div className="flex gap-4 flex-col">
           <h4 className="text-2xl font-semibold ">Contact Us</h4>
           <ul className="flex gap-2 flex-col">
-            {contactLinks.map((link) => {
+            {contactLinks.map((link, index) => {
               return (
-                <li>
+                <li key={index}>
                   <Linking path={link.path} data={link.label} />
                 </li>
               );
@@ -35,9 +35,10 @@ function Footer() {
       <div className="flex justify-between">
         <div></div>
         <div className="flex gap-4 ">
-          {socialLinks.map((item) => {
+          {socialLinks.map((item, index) => {
             return (
               <Linking
+                key={index}
                 path={item.path}
                 data={<img className="" src={item.icon} alt={item.label} />}
               />

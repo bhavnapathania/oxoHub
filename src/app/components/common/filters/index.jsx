@@ -50,13 +50,13 @@ const FilterComponent = () => {
 
   return (
     <div className="py-20">
-      <h1 className="text-3xl font-bold text-center font-inter font-light mb-10">
+      <h1 className="text-3xl text-center font-inter font-light mb-10">
         Done for <span>You</span>
       </h1>
       <div className="flex justify-between mb-5">
-        {categories.map((category) => (
+        {categories.map((category ,index) => (
           <button
-            key={category}
+            key={index}
             className={`px-4 py-1.5 mx-2 ${
               activeCategory === category
                 ? "bg-orange-500 border-2 border-black rounded-xl transition ease-in duration-300"
