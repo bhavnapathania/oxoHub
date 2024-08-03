@@ -9,7 +9,7 @@ function LeftRightImgForm({
   url,
 }) {
   return (
-    <section className="w-full flex justify-between items-center h-[80vh] relative ">
+    <section className="w-full flex justify-between items-center h-[100vh] relative px-20">
       <div
         className="absolute w-full h-full top-0 left-0"
         style={{

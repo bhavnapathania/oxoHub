@@ -4,7 +4,7 @@ import { socialLinks, impLinks, contactLinks } from "@/app/constants";
 
 function Footer() {
   return (
-    <section className="flex gap-4 flex-col border-t-2 border-gray-500 ">
+    <section className="flex gap-4 flex-col border-t-2 border-gray-500 px-20 ">
       <div className="w-full flex justify-between mt-8">
         <div className="flex gap-4 flex-col">
           <h4 className="text-2xl font-semibold ">Important Links</h4>

@@ -3,7 +3,7 @@ import React from "react";
 
 function Header() {
   return (
-    <nav className="header w-full flex justify-between h-[100px] items-center mt-8">
+    <nav className="header absolute w-full flex justify-between h-[100px] items-center pt-8 z-10 px-20">
       <img src="/images/branding/logo.svg" alt="logo" />
       <ul className="flex gap-4 border-l-2 border-gray-500 py-4 px-8 text-lg font-medium items-center">
         <li>About Us</li>

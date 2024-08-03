@@ -49,9 +49,9 @@ const FilterComponent = () => {
       : items.filter((item) => item.category === activeCategory);
 
   return (
-    <div className="py-20">
+    <div className="p-20">
       <h1 className="text-3xl text-center font-inter font-light mb-10">
-        Done for <span>You</span>
+        Done for <span className="text-orange-400 font-semibold">You</span>
       </h1>
       <div className="flex justify-between mb-5">
         {categories.map((category ,index) => (

@@ -57,8 +57,8 @@ const sliderItems = [
 ];
 export default function Home() {
   return (
-    <section className="w-full ">
-      <HeroSection />
+    <section className="w-full">
+      <HeroSection/>
       <FilterComponent />
       <Sliders images1={sliderItems} images2={sliderItems} />
       <LeftRightImgForm
