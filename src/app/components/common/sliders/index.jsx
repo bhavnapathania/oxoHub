@@ -6,25 +6,29 @@ const Sliders = ({ images1, images2 }) => {
   const settingsRight = {
     dots: false,
     infinite: true,
-    speed: 500, // Adjust speed for smooth transition
+    speed: 2000, // Increase speed for continuous sliding effect
     slidesToShow: 4,
     slidesToScroll: 1,
     autoplay: true,
-    autoplaySpeed: 2000, // Time in ms between each slide transition
-    cssEase: "ease-in-out", // Smoother transition effect
+    autoplaySpeed: 0, // Set to 0 for continuous sliding
+    cssEase: "linear", // Use linear for smooth, consistent sliding
     rtl: false, // Right to left is false
+    pauseOnHover: false, // Don't pause on hover
+    pauseOnFocus: false, // Don't pause on focus
   };
 
   const settingsLeft = {
     dots: false,
     infinite: true,
-    speed: 500, // Adjust speed for smooth transition
+    speed: 2000, // Increase speed for continuous sliding effect
     slidesToShow: 4,
     slidesToScroll: 1,
     autoplay: true,
-    autoplaySpeed: 2000, // Time in ms between each slide transition
-    cssEase: "ease-in-out", // Smoother transition effect
+    autoplaySpeed: 0, // Set to 0 for continuous sliding
+    cssEase: "linear", // Use linear for smooth, consistent sliding
     rtl: true, // Right to left is true
+    pauseOnHover: false, // Don't pause on hover
+    pauseOnFocus: false, // Don't pause on focus
   };
 
   return (

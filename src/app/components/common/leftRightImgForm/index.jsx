@@ -9,7 +9,7 @@ function LeftRightImgForm({
   url,
 }) {
   return (
-    <section className="w-full flex justify-between items-center h-[100vh] relative px-20">
+    <section className="w-full flex justify-between items-center h-[100vh] relative px-20 2xl:px-36">
       <div
         className="absolute w-full h-full top-0 left-0"
         style={{
@@ -18,7 +18,7 @@ function LeftRightImgForm({
           backgroundRepeat: "no-repeat",
         }}
       ></div>
-      <div className="flex flex-col gap-6 w-[55%] relative">
+      <div className="flex flex-col gap-6 w-[45%] relative">
         <div className="flex flex-col gap-6 w-[80%]">
           <h2 className="text-4xl font-normal">
             {title} <span className="text-orange-500">{coloredText}</span>

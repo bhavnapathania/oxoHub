@@ -49,7 +49,7 @@ const FilterComponent = () => {
       : items.filter((item) => item.category === activeCategory);
 
   return (
-    <div className="p-20">
+    <div className="p-20 2xl:px-36">
       <h1 className="text-3xl text-center font-inter font-light mb-10">
         Done for <span className="text-orange-400 font-semibold">You</span>
       </h1>
