@@ -6,7 +6,7 @@ function Footer() {
   return (
     <section className="flex flex-col border-t border-gray-500 px-20 2xl:px-36">
       {/* Top Row: Important Links, Contact Us, Logo */}
-      <div className="w-full flex justify-between mt-8 mb-4">
+      <div className=" w-full flex justify-between mt-8 mb-4">
         <div className="flex gap-4 flex-col">
           <h4 className="text-2xl font-semibold">Important Links</h4>
           <ul className="flex gap-2 flex-col">

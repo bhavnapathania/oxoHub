@@ -10,7 +10,7 @@ const options = [
   "Visiting Cards",
   "Wireframes",
   "Dashboard",
-  "Portfolios"
+  "Portfolios",
 ];
 
 function LeftRightImgForm({
@@ -21,7 +21,7 @@ function LeftRightImgForm({
   url,
 }) {
   return (
-    <section className="w-full flex justify-between items-center h-[100vh] relative px-20 2xl:px-36">
+    <section className="w-full flex justify-between flex-col items-center gap-6 md:flex-row md:gap-0  md:h-[100vh] relative px-20 2xl:px-36">
       <div
         className="absolute w-full h-full top-0 left-0"
         style={{
@@ -30,7 +30,7 @@ function LeftRightImgForm({
           backgroundRepeat: "no-repeat",
         }}
       ></div>
-      <div className="flex flex-col gap-6 w-[45%] relative">
+      <div className="w-[100%] flex flex-col gap-6 md:w-[45%] relative">
         <div className="flex flex-col gap-6 w-[80%]">
           <h2 className="text-4xl font-normal">
             {title} <span className="text-orange-500">{coloredText}</span>

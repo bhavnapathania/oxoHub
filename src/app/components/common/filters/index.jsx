@@ -53,7 +53,7 @@ const FilterComponent = () => {
       <h1 className="text-6xl text-center font-inter font-normal mb-10">
         Done for <span className="text-orange-400 font-semibold">You</span>
       </h1>
-      <div className="flex justify-between mb-5 w-[80%]">
+      <div className="flex justify-between flex-wrap mb-5 w-[80%]">
         {categories.map((category, index) => (
           <button
             key={index}
