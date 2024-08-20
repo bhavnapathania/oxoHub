@@ -4,9 +4,9 @@ import { socialLinks, impLinks, contactLinks } from "@/app/constants";
 
 function Footer() {
   return (
-    <section className="flex flex-col border-t border-gray-500 px-20 2xl:px-36">
+    <section className="flex flex-col border-t border-gray-500 px-5 md:px-20 2xl:px-36">
       {/* Top Row: Important Links, Contact Us, Logo */}
-      <div className=" w-full flex justify-between mt-8 mb-4">
+      <div className=" w-full flex  gap-4 justify-between mt-8 mb-4 md:gap-0">
         <div className="flex gap-4 flex-col">
           <h4 className="text-2xl font-semibold">Important Links</h4>
           <ul className="flex gap-2 flex-col">
@@ -17,7 +17,24 @@ function Footer() {
             ))}
           </ul>
         </div>
-        <div className="flex gap-4 flex-col">
+        <div className="flex flex-col justify-between md:hidden">
+          <div className="flex gap-4 flex-col ">
+            <h4 className="text-2xl font-semibold">Contact Us</h4>
+            <ul className="flex gap-2 flex-col">
+              {contactLinks.map((link, index) => (
+                <li key={index}>
+                  <Linking path={link.path} data={link.label} />
+                </li>
+              ))}
+            </ul>
+          </div>
+          <img
+            src="/images/branding/logo.svg"
+            alt="logo"
+            className="w-[155px] h-[56px]"
+          />
+        </div>
+        <div className="gap-4 flex-col hidden md:flex">
           <h4 className="text-2xl font-semibold">Contact Us</h4>
           <ul className="flex gap-2 flex-col">
             {contactLinks.map((link, index) => (
@@ -30,7 +47,7 @@ function Footer() {
         <img
           src="/images/branding/logo.svg"
           alt="logo"
-          className="w-[155px] h-[56px]"
+          className="w-[155px] h-[56px] hidden md:flex"
         />
       </div>
 

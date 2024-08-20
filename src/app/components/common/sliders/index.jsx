@@ -1,7 +1,12 @@
 "use client";
+import { Covered_By_Your_Grace } from "next/font/google";
 import React from "react";
 import Slider from "react-slick";
 
+const coveredByYourGrace = Covered_By_Your_Grace({
+  subsets: ["latin"],
+  weight: "400",
+});
 const Sliders = ({ images1, images2 }) => {
   const settingsRight = {
     dots: false,
@@ -32,14 +37,14 @@ const Sliders = ({ images1, images2 }) => {
   };
 
   return (
-    <div className="text-center py-12">
-      <h2 className="text-6xl font-normal pb-10">
-        Our happy <span className="text-orange-500">Customers</span>
+    <div className="md:text-center px-5 py-12">
+      <h2 className="text-4xl md:text-6xl font-normal pb-10">
+        Our Happy <span className={`text-orange-400 ${coveredByYourGrace.className}`}>Customers</span>
       </h2>
       <div className="mb-8">
         <Slider {...settingsRight}>
           {images1?.map((image, index) => (
-            <div key={index} className="slide p-4">
+            <div key={index} className="slide px-2 md:p-4">
               <img
                 src={image?.src}
                 alt={`Customer ${index + 1}`}
@@ -52,7 +57,7 @@ const Sliders = ({ images1, images2 }) => {
       <div>
         <Slider {...settingsLeft}>
           {images2?.map((image, index) => (
-            <div key={index} className="slide p-4">
+            <div key={index} className="slide px-2 md:p-4">
               <img
                 src={image?.src}
                 alt={`Customer ${index + 1}`}

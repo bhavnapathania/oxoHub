@@ -1,6 +1,6 @@
 "use client";
+import { Covered_By_Your_Grace } from "next/font/google";
 import React, { useState } from "react";
-
 const categories = [
   "All",
   "Mobile App Designs",
@@ -12,7 +12,10 @@ const categories = [
   "Dashboard",
   "Portfolios",
 ];
-
+const coveredByYourGrace = Covered_By_Your_Grace({
+  subsets: ["latin"],
+  weight: "400",
+});
 const items = [
   {
     id: 1,
@@ -49,15 +52,18 @@ const FilterComponent = () => {
       : items.filter((item) => item.category === activeCategory);
 
   return (
-    <div className="p-20 2xl:px-36">
-      <h1 className="text-6xl text-center font-inter font-normal mb-10">
-        Done for <span className="text-orange-400 font-semibold">You</span>
+    <div className="px-5 md:p-20 2xl:px-36">
+      <h1 className="text-4xl mb-4 md:text-6xl md:text-center font-inter font-normal md:mb-10">
+        Done for{" "}
+        <span className={`text-orange-400 ${coveredByYourGrace.className}`}>
+          you
+        </span>
       </h1>
-      <div className="flex justify-between flex-wrap mb-5 w-[80%]">
-        {categories.map((category, index) => (
+      <div className="flex justify-between overflow-x-scroll-scr mb-5">
+        {categories?.map((category, index) => (
           <button
             key={index}
-            className={`px-4 py-1.5 mx-2 ${
+            className={`px-1.5 py-1 md:px-4 md:py-1.5 md:mx-2 ${
               activeCategory === category
                 ? "bg-orange-500 border-2 border-black rounded-xl transition ease-in duration-300"
                 : "bg-transparent"
