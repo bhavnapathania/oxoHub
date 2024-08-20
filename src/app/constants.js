@@ -46,15 +46,5 @@ export const socialLinks = [
     label: "Instagram",
     path: "#",
     icon: "/images/icons/insta.svg",
-  },
-  {
-    label: "Twitter",
-    path: "#",
-    icon: "/images/icons/twitter.svg",
-  },
-  {
-    label: "Yotube",
-    path: "#",
-    icon: "/images/icons/yt.svg",
-  },
+  }
 ];

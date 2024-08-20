@@ -1,4 +1,4 @@
-"use client"
+"use client";
 import React, { useState } from "react";
 
 const categories = [
@@ -50,11 +50,11 @@ const FilterComponent = () => {
 
   return (
     <div className="p-20 2xl:px-36">
-      <h1 className="text-3xl text-center font-inter font-light mb-10">
+      <h1 className="text-6xl text-center font-inter font-normal mb-10">
         Done for <span className="text-orange-400 font-semibold">You</span>
       </h1>
-      <div className="flex justify-between mb-5">
-        {categories.map((category ,index) => (
+      <div className="flex justify-between mb-5 w-[80%]">
+        {categories.map((category, index) => (
           <button
             key={index}
             className={`px-4 py-1.5 mx-2 ${

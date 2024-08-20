@@ -1,14 +1,15 @@
 import React from "react";
 
-function Form({ btnLabel, placeholderText, icon }) {
+function Form({ btnLabel, placeholderText, icon, options }) {
   return (
     <div className="w-[100%] bg-white shadow-lg py-8 px-12 rounded-lg">
       <div className="mb-4">
         <select className="block w-full p-6 border-b-2 border-orange-500 focus:outline-none">
-          <option>Select Logo</option>
-          <option>Logo 1</option>
-          <option>Logo 2</option>
-          <option>Logo 3</option>
+          {options.map((option, index) => (
+            <option key={index} value={option}>
+              {option}
+            </option>
+          ))}
         </select>
       </div>
 

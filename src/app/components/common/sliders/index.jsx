@@ -33,7 +33,7 @@ const Sliders = ({ images1, images2 }) => {
 
   return (
     <div className="text-center py-12">
-      <h2 className="text-4xl font-normal pb-10">
+      <h2 className="text-6xl font-normal pb-10">
         Our happy <span className="text-orange-500">Customers</span>
       </h2>
       <div className="mb-8">

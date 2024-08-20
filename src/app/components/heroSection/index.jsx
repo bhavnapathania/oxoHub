@@ -10,7 +10,7 @@ function HeroSection() {
         backgroundRepeat: "no-repeat",
       }}
     >
-      <div className="flex justify-between items-center mt-64 px-20 2xl:px-36">
+      <div className="flex justify-between items-center px-20 2xl:px-36">
         <div className="w-[50%] relative flex flex-col gap-6">
           <img
             src="/images/icons/dice.svg"
@@ -27,8 +27,8 @@ function HeroSection() {
           </div>
         </div>
         <img
-          className="w-[45%]"
-          src="/images/others/hero.png"
+          className="w-[797px] h-[702px]"
+          src="/images/others/newHero.png"
           alt="Main Graphic"
         />
       </div>

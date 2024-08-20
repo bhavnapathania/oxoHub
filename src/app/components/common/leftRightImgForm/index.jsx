@@ -1,6 +1,18 @@
 import React from "react";
 import Form from "../form";
 
+const options = [
+  "All",
+  "Mobile App Designs",
+  "Mockups Designs",
+  "Banners/Flyers",
+  "Logos",
+  "Visiting Cards",
+  "Wireframes",
+  "Dashboard",
+  "Portfolios"
+];
+
 function LeftRightImgForm({
   title,
   coloredText,
@@ -33,6 +45,7 @@ function LeftRightImgForm({
             placeholderText={"Please write your message here..."}
             btnLabel={"Book Your Order"}
             icon={"/images/icons/arrow.svg"}
+            options={options}
           />
         </div>
       </div>
