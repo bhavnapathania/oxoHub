@@ -59,7 +59,7 @@ const FilterComponent = () => {
           you
         </span>
       </h1>
-      <div className="flex justify-between overflow-x-scroll-scr mb-5">
+      <div className="flex justify-between overflow-x-scroll gap-10 whitespace-nowrap pb-6 md:mb-5 md:w-[80%] md:overflow-hidden">
         {categories?.map((category, index) => (
           <button
             key={index}
@@ -79,7 +79,7 @@ const FilterComponent = () => {
           </button>
         ))}
       </div>
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-y-20 gap-x-10 mt-14">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-y-20 gap-x-10 mt-6">
         {filteredItems.map((item) => (
           <div key={item.id} className="border rounded overflow-hidden">
             <img src={item.src} alt={item.category} className="w-full h-auto" />

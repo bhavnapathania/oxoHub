@@ -16,7 +16,7 @@ function HeroSection() {
         backgroundRepeat: "no-repeat",
       }}
     >
-      <div className="flex flex-col-reverse gap-10 md:flex-row justify-between items-center py-10 px-5 md:px-20 mt-20 md:mt-40 2xl:mt-40 2xl:px-36 w-full">
+      <div className="flex flex-col-reverse gap-10 md:flex-row justify-between items-center  px-5 md:px-20 mt-20 md:mt-40 2xl:mt-40 2xl:px-36 w-full">
         <div className="md:w-[50%] mt-20 md:mt-0 relative flex flex-col gap-6">
           <img
             src="/images/icons/dice.svg"

@@ -7,7 +7,7 @@ function Header() {
       <img src="/images/branding/logo.svg" alt="logo" />
       <ul className="flex gap-6 border-l-2 border-gray-500 my-4 pl-8 text-lg font-medium items-center">
         <li>About Us</li>
-        <li>Our Work</li>
+        <li >Our Work</li>
 
         <li
           className="bg-orange-500 border-2 rounded-[12px] border-black shadow-lg px-4 py-4"

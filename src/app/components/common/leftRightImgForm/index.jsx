@@ -57,7 +57,7 @@ function LeftRightImgForm({
           />
         </div>
       </div>
-      <img className="p-8 md:p-0" src={url} alt="" />
+      <img className="p-8 md:p-0 h-auto" src={url} alt="" />
     </section>
   );
 }
