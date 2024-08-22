@@ -1,11 +1,15 @@
 "use client";
-import { Covered_By_Your_Grace } from "next/font/google";
+import { Covered_By_Your_Grace, Manrope } from "next/font/google";
 import React from "react";
 import Slider from "react-slick";
 
 const coveredByYourGrace = Covered_By_Your_Grace({
   subsets: ["latin"],
   weight: "400",
+});
+const manrope = Manrope({
+  subsets: ["latin"],
+  weight: "300",
 });
 const Sliders = ({ images1, images2 }) => {
   const settingsRight = {
@@ -77,9 +81,14 @@ const Sliders = ({ images1, images2 }) => {
   };
 
   return (
-    <div className="md:text-center px-5 py-12">
-      <h2 className="text-4xl md:text-6xl font-normal pb-10">
-        Our Happy <span className={`text-orange-400 ${coveredByYourGrace.className}`}>Customers</span>
+    <div className="text-center px-5 py-8 md:py-0">
+      <h2
+        className={`text-4xl md:text-6xl font-normal pb-10 ${manrope.className}`}
+      >
+        Our Happy{" "}
+        <span className={`text-orange-400 ${coveredByYourGrace.className}`}>
+          Customers
+        </span>
       </h2>
       <div className="mb-8">
         <Slider {...settingsRight}>

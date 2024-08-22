@@ -8,18 +8,18 @@ function Header() {
 
   return (
     <nav
-      className={`header absolute w-full flex justify-between items-center pt-4 px-5 md:shadow-none md:h-[100px] md:pt-8 z-20 md:px-20 2xl:px-36 ${
+      className={`header absolute w-full flex justify-between items-center pt-4 px-5 bg-white md:bg-transparent md:shadow-none md:h-[100px] md:pt-8 z-20 lg:px-20 2xl:px-36 ${
         menuOpen ? "" : "shadow-lg"
       }`}
     >
       <img
         src="/images/branding/logo.svg"
         alt="logo"
-        className="pb-4 mb:pb-0"
+        className="pb-4 h-14 md:h-auto mb:pb-0"
       />
       <div className="md:hidden">
         <button onClick={() => setMenuOpen(!menuOpen)}>
-          {menuOpen ? <HiX size={40} /> : <HiMenu size={40} />}
+          {menuOpen ? <HiX size={30} /> : <HiMenu size={30} />}
         </button>
       </div>
       <ul
