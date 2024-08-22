@@ -60,7 +60,7 @@ function HeroSection() {
           )}
 
           <div className="flex justify-between items-center">
-            <span className="transform rotate-12 bg-orange-500 text-black rounded-xl px-4 py-2 text-xs font-bold">
+            <span className="transform rotate-12 bg-orange-600 text-black rounded-xl px-4 py-2 text-sm font-bold">
               YOUR IDEA STARTS HERE
             </span>
             <img
@@ -74,11 +74,11 @@ function HeroSection() {
             className={`text-4xl  md:text-6xl xl:text-7xl font-extralight ${manrope.className}`}
           >
             We design{" "}
-            <span className={`text-orange-400 ${coveredByYourGrace.className}`}>
+            <span className={`text-orange-600 ${coveredByYourGrace.className}`}>
               experiences
             </span>{" "}
             that move businesses to the{" "}
-            <span className={`text-orange-400 ${coveredByYourGrace.className}`}>
+            <span className={`text-orange-600 ${coveredByYourGrace.className}`}>
               future.
             </span>
           </h2>

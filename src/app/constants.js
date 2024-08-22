@@ -27,11 +27,7 @@ export const impLinks = [
 
 export const contactLinks = [
   {
-    label: "Email: help@sablecard.com",
-    path: "#",
-  },
-  {
-    label: "Location: New York, NY",
+    label: "Email: oxohub07@gmail.com",
     path: "#",
   },
 ];
@@ -46,5 +42,5 @@ export const socialLinks = [
     label: "Instagram",
     path: "#",
     icon: "/images/icons/insta.svg",
-  }
+  },
 ];

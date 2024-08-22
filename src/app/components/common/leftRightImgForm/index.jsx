@@ -46,7 +46,7 @@ function LeftRightImgForm({
             className={`text-4xl  md:text-5xl font-normal ${manrope.className}`}
           >
             {title}{" "}
-            <span className={`text-orange-400 ${coveredByYourGrace.className}`}>
+            <span className={`text-orange-600 ${coveredByYourGrace.className}`}>
               {coloredText}
             </span>
           </h2>
