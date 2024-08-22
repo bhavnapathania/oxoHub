@@ -20,6 +20,26 @@ const Sliders = ({ images1, images2 }) => {
     rtl: false, // Right to left is false
     pauseOnHover: false, // Don't pause on hover
     pauseOnFocus: false, // Don't pause on focus
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 4,
+        },
+      },
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 3,
+        },
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 2,
+        },
+      },
+    ],
   };
 
   const settingsLeft = {
@@ -34,6 +54,26 @@ const Sliders = ({ images1, images2 }) => {
     rtl: true, // Right to left is true
     pauseOnHover: false, // Don't pause on hover
     pauseOnFocus: false, // Don't pause on focus
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 4,
+        },
+      },
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 3,
+        },
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 2,
+        },
+      },
+    ],
   };
 
   return (
@@ -48,7 +88,7 @@ const Sliders = ({ images1, images2 }) => {
               <img
                 src={image?.src}
                 alt={`Customer ${index + 1}`}
-                className="mx-auto h-24"
+                className="mx-auto h-12 md:h-24"
               />
             </div>
           ))}
@@ -61,7 +101,7 @@ const Sliders = ({ images1, images2 }) => {
               <img
                 src={image?.src}
                 alt={`Customer ${index + 1}`}
-                className="mx-auto h-24"
+                className="mx-auto h-12 md:h-24"
               />
             </div>
           ))}
