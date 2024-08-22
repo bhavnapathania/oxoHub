@@ -1,10 +1,15 @@
 import React from "react";
 import Form from "../form";
-import { Covered_By_Your_Grace } from "next/font/google";
+import { Covered_By_Your_Grace, Manrope } from "next/font/google";
 
 const coveredByYourGrace = Covered_By_Your_Grace({
   subsets: ["latin"],
   weight: "400",
+});
+
+const manrope = Manrope({
+  subsets: ["latin"],
+  weight: "300",
 });
 const options = [
   "All",
@@ -26,7 +31,7 @@ function LeftRightImgForm({
   url,
 }) {
   return (
-    <section className="w-full flex justify-between flex-col items-center gap-10 px-5 md:flex-row md:gap-0 md:h-[100vh] relative md:px-20 2xl:px-36">
+    <section className="w-full flex justify-between flex-col items-center gap-10 py-8 px-5 md:flex-row md:gap-0 md:h-[100vh] relative md:px-20 2xl:px-36">
       <div
         className="absolute w-full h-full top-0 left-0"
         style={{
@@ -36,8 +41,10 @@ function LeftRightImgForm({
         }}
       ></div>
       <div className="w-[100%] flex flex-col gap-6 md:w-[45%] relative">
-        <div className="flex flex-col gap-6 w-[80%]">
-          <h2 className="text-4xl font-normal">
+        <div className="text-center md:text-start flex flex-col gap-6 md:w-[80%]">
+          <h2
+            className={`text-4xl  md:text-5xl font-normal ${manrope.className}`}
+          >
             {title}{" "}
             <span className={`text-orange-400 ${coveredByYourGrace.className}`}>
               {coloredText}
@@ -57,7 +64,9 @@ function LeftRightImgForm({
           />
         </div>
       </div>
-      <img className="p-8 md:p-0 h-auto" src={url} alt="" />
+      <div className="flex justify-center  items-center p-14 md:p-0 h-auto md:w-[70vh] md:h-[65vh]">
+        <img className="" src={url} alt="" />
+      </div>
     </section>
   );
 }

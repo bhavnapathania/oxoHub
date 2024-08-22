@@ -1,5 +1,5 @@
 "use client";
-import { Covered_By_Your_Grace } from "next/font/google";
+import { Covered_By_Your_Grace, Manrope } from "next/font/google";
 import React, { useState } from "react";
 const categories = [
   "All",
@@ -15,6 +15,11 @@ const categories = [
 const coveredByYourGrace = Covered_By_Your_Grace({
   subsets: ["latin"],
   weight: "400",
+});
+
+const manrope = Manrope({
+  subsets: ["latin"],
+  weight: "300",
 });
 const items = [
   {
@@ -52,18 +57,20 @@ const FilterComponent = () => {
       : items.filter((item) => item.category === activeCategory);
 
   return (
-    <div className="px-5 md:p-20 2xl:px-36">
-      <h1 className="text-4xl mb-4 md:text-6xl md:text-center font-inter font-normal md:mb-10">
+    <div className="px-5 py-10 lg:p-20 2xl:px-36">
+      <h1
+        className={`text-5xl mb-10 md:text-6xl text-center font-inter font-normal md:mb-10 ${manrope.className}`}
+      >
         Done for{" "}
         <span className={`text-orange-400 ${coveredByYourGrace.className}`}>
           you
         </span>
       </h1>
-      <div className="flex justify-between overflow-x-scroll gap-10 whitespace-nowrap pb-6 md:mb-5 md:w-[80%] md:overflow-hidden">
+      <div className="flex overflow-x-scroll gap-4 whitespace-nowrap pb-6 md:mb-5 md:">
         {categories?.map((category, index) => (
           <button
             key={index}
-            className={`px-1.5 py-1 md:px-4 md:py-1.5 md:mx-2 ${
+            className={`px-1.5 py-1 md:px-4 md:py-1.5 ${
               activeCategory === category
                 ? "bg-orange-500 border-2 border-black rounded-xl transition ease-in duration-300"
                 : "bg-transparent"
@@ -79,7 +86,7 @@ const FilterComponent = () => {
           </button>
         ))}
       </div>
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-y-20 gap-x-10 mt-6">
+      <div className="grid grid-cols-1 gap-y-6 sm:grid-cols-2 lg:grid-cols-4 md:gap-y-20 gap-x-10 mt-6">
         {filteredItems.map((item) => (
           <div key={item.id} className="border rounded overflow-hidden">
             <img src={item.src} alt={item.category} className="w-full h-auto" />

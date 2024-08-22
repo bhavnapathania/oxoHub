@@ -6,9 +6,9 @@ function Footer() {
   return (
     <section className="flex flex-col border-t border-gray-500 px-5 md:px-20 2xl:px-36">
       {/* Top Row: Important Links, Contact Us, Logo */}
-      <div className=" w-full flex  gap-4 justify-between mt-8 mb-4 md:gap-0">
+      <div className=" w-full flex  gap-6 justify-between mt-8 mb-4 md:gap-0">
         <div className="flex gap-4 flex-col">
-          <h4 className="text-2xl font-semibold">Important Links</h4>
+          <h4 className="text-2xl font-semibold whitespace-nowrap">Important Links</h4>
           <ul className="flex gap-2 flex-col">
             {impLinks.map((link, index) => (
               <li key={index}>

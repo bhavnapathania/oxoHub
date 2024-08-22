@@ -2,16 +2,16 @@ import React from "react";
 
 function Form({ btnLabel, placeholderText, icon, options }) {
   return (
-    <div className="w-[100%] bg-white shadow-lg p-6 md:py-8 md:px-12 rounded-lg">
+    <div className="w-[100%] mx-5 md:mx-0 bg-white shadow-lg p-6 md:py-8 md:px-12 rounded-lg">
       <div className="mb-4">
         <input
-          className="block w-full p-6 border-b-2 border-orange-500 focus:outline-none"
+          className="block w-full p-2 border-b-2 border-orange-500 focus:outline-none"
           placeholder="Enter your email"
           type="email"
         />
       </div>
       <div className="mb-4">
-        <select className="block w-full p-6 border-b-2 border-orange-500 focus:outline-none">
+        <select className="block w-full p-2 border-b-2 border-orange-500 focus:outline-none">
           {options.map((option, index) => (
             <option key={index} value={option}>
               {option}
@@ -23,7 +23,7 @@ function Form({ btnLabel, placeholderText, icon, options }) {
       <div className="mb-4">
         <textarea
           rows={2}
-          className="block w-full p-6 pb-12 border-b-2 border-orange-500 focus:outline-none placeholder:text-gray-400 "
+          className="block w-full p-2 pb-12 border-b-2 border-orange-500 focus:outline-none placeholder:text-gray-400 "
           placeholder={placeholderText}
         />
       </div>

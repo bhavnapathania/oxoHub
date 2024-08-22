@@ -1,11 +1,15 @@
 "use client";
-import { Covered_By_Your_Grace } from "next/font/google";
+import { Covered_By_Your_Grace, Manrope } from "next/font/google";
 import React from "react";
 import Slider from "react-slick";
 
 const coveredByYourGrace = Covered_By_Your_Grace({
   subsets: ["latin"],
   weight: "400",
+});
+const manrope = Manrope({
+  subsets: ["latin"],
+  weight: "300",
 });
 const Sliders = ({ images1, images2 }) => {
   const settingsRight = {
@@ -20,6 +24,26 @@ const Sliders = ({ images1, images2 }) => {
     rtl: false, // Right to left is false
     pauseOnHover: false, // Don't pause on hover
     pauseOnFocus: false, // Don't pause on focus
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 4,
+        },
+      },
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 3,
+        },
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 2,
+        },
+      },
+    ],
   };
 
   const settingsLeft = {
@@ -34,12 +58,37 @@ const Sliders = ({ images1, images2 }) => {
     rtl: true, // Right to left is true
     pauseOnHover: false, // Don't pause on hover
     pauseOnFocus: false, // Don't pause on focus
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 4,
+        },
+      },
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 3,
+        },
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 2,
+        },
+      },
+    ],
   };
 
   return (
-    <div className="md:text-center px-5 py-12">
-      <h2 className="text-4xl md:text-6xl font-normal pb-10">
-        Our Happy <span className={`text-orange-400 ${coveredByYourGrace.className}`}>Customers</span>
+    <div className="text-center px-5 py-8 md:py-0">
+      <h2
+        className={`text-4xl md:text-6xl font-normal pb-10 ${manrope.className}`}
+      >
+        Our Happy{" "}
+        <span className={`text-orange-400 ${coveredByYourGrace.className}`}>
+          Customers
+        </span>
       </h2>
       <div className="mb-8">
         <Slider {...settingsRight}>
@@ -48,7 +97,7 @@ const Sliders = ({ images1, images2 }) => {
               <img
                 src={image?.src}
                 alt={`Customer ${index + 1}`}
-                className="mx-auto h-24"
+                className="mx-auto h-12 md:h-24"
               />
             </div>
           ))}
@@ -61,7 +110,7 @@ const Sliders = ({ images1, images2 }) => {
               <img
                 src={image?.src}
                 alt={`Customer ${index + 1}`}
-                className="mx-auto h-24"
+                className="mx-auto h-12 md:h-24"
               />
             </div>
           ))}
