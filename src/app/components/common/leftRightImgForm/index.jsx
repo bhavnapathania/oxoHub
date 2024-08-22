@@ -31,7 +31,7 @@ function LeftRightImgForm({
   url,
 }) {
   return (
-    <section className="w-full flex justify-between flex-col items-center gap-10 py-8 px-5 md:flex-row md:gap-0 md:h-[100vh] relative md:px-20 2xl:px-36">
+    <section className="w-full flex justify-between flex-col items-center gap-10 py-8 px-5 md:flex-row md:gap-0 relative md:px-20 2xl:px-36">
       <div
         className="absolute w-full h-full top-0 left-0"
         style={{
@@ -64,8 +64,8 @@ function LeftRightImgForm({
           />
         </div>
       </div>
-      <div className="flex justify-center  items-center p-14 md:p-0 h-auto md:w-[70vh] md:h-[65vh]">
-        <img className="" src={url} alt="" />
+      <div className="flex justify-center  items-center p-14 md:p-0 h-auto">
+        <img className="h-full" src={url} alt="" />
       </div>
     </section>
   );
