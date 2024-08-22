@@ -4,6 +4,13 @@ function Form({ btnLabel, placeholderText, icon, options }) {
   return (
     <div className="w-[100%] bg-white shadow-lg p-6 md:py-8 md:px-12 rounded-lg">
       <div className="mb-4">
+        <input
+          className="block w-full p-6 border-b-2 border-orange-500 focus:outline-none"
+          placeholder="Enter your email"
+          type="email"
+        />
+      </div>
+      <div className="mb-4">
         <select className="block w-full p-6 border-b-2 border-orange-500 focus:outline-none">
           {options.map((option, index) => (
             <option key={index} value={option}>
@@ -16,7 +23,7 @@ function Form({ btnLabel, placeholderText, icon, options }) {
       <div className="mb-4">
         <textarea
           rows={2}
-          className="block w-full p-6 pb-12 border-b-2 border-gray-300 focus:outline-none placeholder:text-gray-400 "
+          className="block w-full p-6 pb-12 border-b-2 border-orange-500 focus:outline-none placeholder:text-gray-400 "
           placeholder={placeholderText}
         />
       </div>
