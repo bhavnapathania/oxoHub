@@ -29,7 +29,7 @@ const items = [
   { id: 8, category: "Portfolios", src: "/images/categories/portfolios.png" },
 ];
 
-const sliderItems = [
+const sliderItem1 = [
   {
     id: 1,
     category: "Mobile App Designs",
@@ -53,14 +53,22 @@ const sliderItems = [
   },
   { id: 6, category: "Wireframes", src: "/images/slider/logo6.png" },
   { id: 7, category: "Dashboard", src: "/images/slider/logo7.png" },
+];
+
+const sliderItem2 = [
   { id: 8, category: "Portfolios", src: "/images/slider/logo8.png" },
+  { id: 9, category: "Portfolios", src: "/images/slider/logo9.png" },
+  { id: 10, category: "Portfolios", src: "/images/slider/logo10.png" },
+  { id: 11, category: "Portfolios", src: "/images/slider/logo11.png" },
+  { id: 12, category: "Portfolios", src: "/images/slider/logo12.png" },
+  { id: 13, category: "Portfolios", src: "/images/slider/logo13.png" },
 ];
 export default function Home() {
   return (
     <section className="w-full">
-      <HeroSection/>
+      <HeroSection />
       <FilterComponent />
-      <Sliders images1={sliderItems} images2={sliderItems} />
+      <Sliders images1={sliderItem1} images2={sliderItem2} />
       <LeftRightImgForm
         title="Select What You"
         coloredText="Want"

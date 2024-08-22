@@ -86,7 +86,7 @@ const Sliders = ({ images1, images2 }) => {
         className={`text-4xl md:text-6xl font-normal pb-10 ${manrope.className}`}
       >
         Our Happy{" "}
-        <span className={`text-orange-400 ${coveredByYourGrace.className}`}>
+        <span className={`text-orange-600 ${coveredByYourGrace.className}`}>
           Customers
         </span>
       </h2>

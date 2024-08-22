@@ -1,4 +1,5 @@
 import React from "react";
+import { BsArrowRight } from "react-icons/bs";
 
 function Form({ btnLabel, placeholderText, icon, options }) {
   return (
@@ -29,9 +30,9 @@ function Form({ btnLabel, placeholderText, icon, options }) {
       </div>
 
       <div className="flex items-center justify-center">
-        <button className="text-orange-500 border-2 border-orange-500 font-bold py-2 px-4 rounded  flex items-center justify-center">
+        <button className="text-orange-500 border-2 border-orange-500 font-bold py-2 px-4 rounded  flex items-center justify-center hover:bg-orange-600 hover:text-white">
           {btnLabel}
-          <img src={icon} alt="" className="ml-2" />
+          <BsArrowRight size = {30} className="ml-2"/>
         </button>
       </div>
     </div>

@@ -31,7 +31,7 @@ function LeftRightImgForm({
   url,
 }) {
   return (
-    <section className="w-full flex justify-between flex-col items-center gap-10 py-8 px-5 md:flex-row md:gap-0 md:h-[100vh] relative md:px-20 2xl:px-36">
+    <section id="form" className="w-full flex justify-between flex-col items-center gap-10 py-8 px-5 md:flex-row md:gap-0 md:h-[100vh] relative md:px-20 2xl:px-36">
       <div
         className="absolute w-full h-full top-0 left-0"
         style={{
@@ -46,7 +46,7 @@ function LeftRightImgForm({
             className={`text-4xl  md:text-5xl font-normal ${manrope.className}`}
           >
             {title}{" "}
-            <span className={`text-orange-400 ${coveredByYourGrace.className}`}>
+            <span className={`text-orange-600 ${coveredByYourGrace.className}`}>
               {coloredText}
             </span>
           </h2>

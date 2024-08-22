@@ -22,7 +22,7 @@ function HeroSection() {
       <div className="flex flex-col md:gap-10 md:flex-row justify-between items-center px-5 mt-20 md:mt-40 2xl:mt-28 lg:px-20 2xl:px-36 w-full">
         <div className="md:w-[50%] mt-10 md:mt-0 relative flex flex-col gap-6 md:gap-12">
           <div className="flex justify-between items-center">
-            <span className="transform rotate-12 bg-orange-500 text-black rounded-xl px-4 py-2 text-xs font-bold">
+            <span className="transform rotate-12 bg-orange-600 text-black rounded-xl px-4 py-2 text-sm font-bold">
               YOUR IDEA STARTS HERE
             </span>
             <img
@@ -34,11 +34,11 @@ function HeroSection() {
 
           <h2 className={`text-4xl  md:text-6xl xl:text-7xl font-extralight ${manrope.className}`}>
             We design{" "}
-            <span className={`text-orange-400 ${coveredByYourGrace.className}`}>
+            <span className={`text-orange-600 ${coveredByYourGrace.className}`}>
               experiences
             </span>{" "}
             that move businesses to the{" "}
-            <span className={`text-orange-400 ${coveredByYourGrace.className}`}>
+            <span className={`text-orange-600 ${coveredByYourGrace.className}`}>
               future.
             </span>
           </h2>
