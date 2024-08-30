@@ -4,6 +4,8 @@ import Header from "./components/common/header";
 import Footer from "./components/common/footer";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import { ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 const inter = Inter({ subsets: ["latin"] });
 const coveredByYourGrace = Covered_By_Your_Grace({
   subsets: ["latin"],
@@ -20,6 +22,7 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body className="w-screen flex justify-center overflow-x-hidden">
         <div className="w-full">
+          <ToastContainer />
           <Header />
           <main className={`${inter.className} w-full top-0`}>{children}</main>
           <Footer />
