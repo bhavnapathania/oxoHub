@@ -3,6 +3,7 @@ import React, { useState } from "react";
 import { useFormik } from "formik";
 import { BsArrowRight, BsArrowRepeat } from "react-icons/bs";
 import emailjs from "emailjs-com";
+import { toast } from "react-toastify";
 
 const UploadFormikForm = ({ btnLabel, placeholderText, options }) => {
   const [isLoading, setIsLoading] = useState(false); // State to manage loading
@@ -55,13 +56,19 @@ const UploadFormikForm = ({ btnLabel, placeholderText, options }) => {
           );
 
           console.log("Email sent successfully!");
+          toast.success("Detail Sumbitted successfully");
           resetForm(); // Reset form fields after successful submission
           formik.setFieldValue("file", null);
         } else {
-          console.error("Upload to Cloudinary failed");
+          const errorResult = await cloudinaryResponse.json();
+          const errorMessage =
+            errorResult?.error?.message || "An unknown error occurred.";
+          console.error(errorMessage);
+          toast.error(errorMessage);
         }
       } catch (error) {
         console.error("An error occurred while uploading:", error);
+        toast.error(`An error occurred while uploading: ${error}`);
       } finally {
         setIsLoading(false); // Set loading to false after submission is completed
       }
