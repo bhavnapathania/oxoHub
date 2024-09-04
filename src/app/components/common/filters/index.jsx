@@ -66,8 +66,7 @@ const FilterComponent = () => {
           you
         </span>
       </h1>
-      <div className="flex overflow-x-scroll gap-4 whitespace-nowrap pb-6 md:mb-5  md:gap-0">
-        {categories?.map((category, index) => (
+      <div className="flex overflow-x-auto xl:overflow-visible gap-4 whitespace-nowrap pb-6 md:mb-5 md:gap-0 scrollbar-thin scrollbar-thumb-gray-400 scrollbar-track-gray-200">        {categories?.map((category, index) => (
           <button
             key={index}
             className={`px-1.5 py-1 md:px-4 md:py-1.5 ${
