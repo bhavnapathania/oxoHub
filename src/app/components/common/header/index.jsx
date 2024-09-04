@@ -29,14 +29,13 @@ function Header() {
       >
         <Link href="#">About Us</Link>
         <Link href="#filter">Our Work</Link>
-        <li
+        <Link
           className="bg-orange-600 border-2 rounded-[12px] border-black shadow-lg p-4 md:py-4"
           style={{ boxShadow: "3px 3px 0px 0px #767676" }}
+          href="#form"
         >
-          <Link href="#form">
-            Feel Free To Reach Us
-          </Link>
-        </li>
+          Feel Free To Reach Us
+        </Link>
       </ul>
     </nav>
   );
